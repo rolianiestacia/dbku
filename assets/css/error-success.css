@@ -1,0 +1,20 @@
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #42a951; 
+  color: #42a951; 
+  background: #def2e6; 
+  border-radius: 5px; 
+  text-align: left;
+}

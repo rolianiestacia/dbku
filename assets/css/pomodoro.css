@@ -1,0 +1,113 @@
+
+/* ==========================================================================
+   #POMODORO APP STYLES
+   The css is adapted from https://freshman.tech/pomodoro-timer/
+   (Source: https://github.com/Freshman-tech/pomodoro-starter-files retrieved in March 2022)
+   ========================================================================== */
+
+/**
+ *
+ * Inheriting box sizing slightly better best-practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ *
+*/
+
+:root {
+  --pomodoro: #5F9EA0;
+  --shortBreak: #BC8F8F;
+  --longBreak:  #4682B4;
+} 
+
+
+progress {
+  border-radius: 2px;
+  width: 99%;
+  height: 13px;
+  position: absolute;
+  top: 0;
+}
+
+progress::-webkit-progress-bar {
+ background-color: rgba(0, 0, 0, 0.1);;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fff;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.clock {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 9rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-family: arial, sans-serif;
+}
+
+.mode-button {
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: 300;
+  color: #fff;
+  border: 1px solid transparent;
+  margin: 0px;
+  border-radius: 4px;
+  padding: 3px 12px;
+  background:  none;
+}
+
+.mode-button.active {
+  border-color: #fff;
+}
+
+.main-button {
+  cursor: pointer;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  font-size: 22px;
+  height: 50px;
+  text-transform: uppercase;
+  color: hsl(175, 26%, 41%);
+  font-weight: bold;
+  width: 150px;
+  background-color: white;
+  border-width: initial;
+  border-style: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  transition: color 0.5s ease-in-out 0s;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+.main-button.active {
+  transform: translateY(6px);
+  box-shadow: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .clock {
+    font-size: 8rem;
+  }
+}
